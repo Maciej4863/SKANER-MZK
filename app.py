@@ -11,7 +11,7 @@ st.title("🚌 Skaner Biletów MZK")
 GEMINI_API_KEY = "AQ.Ab8RN6LX29rai6JtXSiuexR_ySO8JU0kWq0AGovQXnx5EMEfJA"
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.0-flash')
 
 if "control_start_time" not in st.session_state:
     st.session_state.control_start_time = None
